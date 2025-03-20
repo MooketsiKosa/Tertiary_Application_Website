@@ -1,0 +1,192 @@
+body {
+    font-family: 'Arial', sans-serif;
+   /* background-image: url('path/to/your/image.jpg'); Background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    color: #000000; /* Black text */
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    position: relative; /* Allow absolute positioning of the logo */
+    background: rgba(0, 51, 102, 0.8); /* Dark blue background with transparency */
+    color: #ffffff; /* White text */
+    padding: 20px 20px; /* Add padding to the header */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.logo {
+    position: absolute; /* Position the logo absolutely */
+    top: 10px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    width: 50px; /* Set the width of the logo (smaller size) */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+main {
+    margin-top: 20px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(240, 240, 240, 0.8); /* Light gray background with transparency */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    li:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+    }
+
+button {
+    background-color: #003366; /* Dark blue button */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+    button:hover {
+        background-color: #00509e; /* Lighter blue on hover */
+        transform: scale(1.05);
+    }
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #000000; /* Black text */
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #ffffff; /* White background for modal */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+    color: #000; /* Black text */
+}
+
+.close {
+    color: #aaa; /* Gray */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000; /* Black on hover */
+        text-decoration: none;
+        cursor: pointer;
+    }
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    z-index: 9999; /* On top of everything */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    border: 8px solid #f3f3f3; /* Light gray */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px; /* Size of the spinner */
+    height: 50px; /* Size of the spinner */
+    animation: spin 1s linear infinite; /* Animation */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #000000; /* Black text */
+}
+
+.social-media {
+    margin-top: 10px; /* Space above social media links */
+}
+
+    .social-media a {
+        color: #003366; /* Dark blue color for icons */
+        margin: 0 10px; /* Space between icons */
+        font-size: 20px; /* Size of icons */
+        transition: color 0.3s; /* Transition for hover effect */
+    }
+
+        .social-media a:hover {
+            color: #00509e; /* Change color on hover */
+        }
+.hero {
+    background-image: url('path/to/hero-image.jpg'); /* Replace with your hero image path */
+    height: 400px; /* Set height for the hero section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    text-align: center;
+    margin-bottom: 20px; /* Space below the hero section */
+}
+
+    .hero h1 {
+        font-size: 2.5em; /* Adjust font size */
+    }
+
+    .hero p {
+        font-size: 1.2em; /* Adjust font size */
+    }
