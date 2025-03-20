@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bursary and University Dates Checker</title>
+    <link href="Scripts/MyScripts/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bursary and University Dates Checker</h1>
+        <h2>Created by Mooketsi Kosa</h2>
+        <h3> Here to make your application process easier</h3> 
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to the Bursary and University Dates </h1>
+            <p>Your gateway to educational opportunities.</p>
+        </section>
+
+        <section id="bursary-list">
+            <h2>Available Bursaries</h2>
+            <button id="fetch-bursaries"><i class="fas fa-graduation-cap"></i> Check Bursary Dates</button>
+        </section>
+
+        <section id="university-list">
+             <h2>University Open and Closing Dates</h2>
+             <button id="fetch-universities"><i class="fas fa-university"></i> Check University Dates</button>
+        </section>
+            
+       <button id="about-us">About Us</button>
+         <div id="loading" class="loading" style="display: none;">
+          <div class="spinner"></div>
+         </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bursary and University Dates Checker. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://twitter.com/yourprofile"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com/yourprofile"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/yourprofile"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <div id="about-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>About Me</h2>
+            <p><strong>Name:</strong> Mooketsi Kosa</p>
+            <p><strong>Location:</strong> South Africa</p>
+            <p><strong>Email:</strong> KosaMooketsi@gmail.com</p>
+        </div>
+    </div>
+    <script src="Scripts/MyScripts/script.js"></script>
+</body>
+</html>
